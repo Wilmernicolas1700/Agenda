@@ -12,5 +12,5 @@ puedes empezar con sud y para terminar es end sud
 sud ejemplo()  
 a = 10  
 b = Sofia  
-c = Nicolas
+c = Nicolas  
 end sud  
