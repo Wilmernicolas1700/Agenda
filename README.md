@@ -9,3 +9,8 @@ en la clase pasada aprendimos a activar el modo programador por excel para así 
 ### inicio y final
 puedes empezar con sud y para terminar es end sud
 ### ejemplo
+sud ejemplo()  
+a = 10
+b = Sofia  
+c = Nicolas
+end sud  
