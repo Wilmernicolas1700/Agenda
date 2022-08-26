@@ -25,33 +25,32 @@ end sud
         If ing_a >= 0 And ing_a < 1000 Then
             MsgBox "la empresa no paga"
         Else
-        If ing_a >= 1001 And ing_a < 10000 Then
-            Total = ing_a * 0.05
-            MsgBox "su impuesto es de: " & Total
-        Else
-            If ing_a >= 10001 And ing_a < 100001 Then
-            Total = ing_a * 0.1
-            MsgBox "su impuesto es de: " & Total
+            If ing_a >= 1001 And ing_a < 10000 Then
+                Total = ing_a * 0.05
+                MsgBox "su impuesto es de: " & Total
             Else
-                If ing_a >= 100001 And ing_a < 1000000 Then
-                    Total = ing_a * 0.15
+                If ing_a >= 10001 And ing_a < 100001 Then
+                    Total = ing_a * 0.1
                     MsgBox "su impuesto es de: " & Total
                 Else
-                    If ing_a >= 1000001 And ing_a < 10000000 Then
-                        Total = ing_a * 0.2
+                    If ing_a >= 100001 And ing_a < 1000000 Then
+                        Total = ing_a * 0.15
                         MsgBox "su impuesto es de: " & Total
                     Else
-                        If ing_a >= 10000001 Then
-                            Total = ing_a * 0.25
-                            MsgBox "su impuesto total es de: " & Total
+                        If ing_a >= 1000001 And ing_a < 10000000 Then
+                            Total = ing_a * 0.2
+                            MsgBox "su impuesto es de: " & Total
                         Else
-                            MsgBox "No se puede"
-                            
+                            If ing_a >= 10000001 Then
+                                Total = ing_a * 0.25
+                                MsgBox "su impuesto total es de: " & Total
+                            Else
+                                MsgBox "No se puede"
+                            End If
                         End If
                     End If
                 End If
             End If
-        End If
         End If
     End Sub
 
