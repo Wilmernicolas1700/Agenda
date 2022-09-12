@@ -44,8 +44,9 @@ en la clase pasada aprendimos a activar el modo programador por excel para así 
 ### inicio y final
 puedes empezar con sud y para terminar es end sud
 ### EJEMPLO DE LA CLASE DE ECXEL 
- 
+
 ´´´´
+
 sub sena
 
     nom = "Nicolas"
@@ -114,6 +115,7 @@ En esta clase nos enseñaron a como mover datos en excel de una hoja a otra hoja
 
 ### EJEMPLO DEL PROGRAMA
 ´´´´
+
     Sub save()
         fila = datos.Cells(1, 8)
         datos.Cells(fila, 2) = registro.Cells(5, 4)
@@ -124,6 +126,7 @@ En esta clase nos enseñaron a como mover datos en excel de una hoja a otra hoja
         datos.Cells(1, 8) = fila + 1
         
     End Sub
+
     ´´´´
 
 
