@@ -12,7 +12,6 @@ para crear uno debemos buscar es donde diga **repositorio** y tenemos que crear 
 
 ### EJEMPLO DE LA HOJA DE VIDA
 
-´´´´
 ### Hoja de vida 
 Wilmer Nicolas Carmona Alvarez
 
@@ -45,7 +44,6 @@ en la clase pasada aprendimos a activar el modo programador por excel para así 
 ### inicio y final
 puedes empezar con sud y para terminar es end sud
 ### EJEMPLO DE LA CLASE DE ECXEL 
-´´´´
  
 ´´´´
 sub sena
@@ -65,50 +63,49 @@ end sub
 ### CODIGO DE INGRESO
 En esta clase debiamos crear un codigo  utilizando visual basic que permitiera calcular el valor a pagar por impuesto anual a una empresa 
 ### EJEMPLO 
-
 ´´´´
+    
+    Sub impuesto_empresa()
 
-Sub impuesto_empresa()
+    ing_anual = InputBox("Ingrese su ingreso anual: ")
 
-ing_anual = InputBox("Ingrese su ingreso anual: ")
-
-If ing_anual >= 0 And ing_anual < 1000 Then
-    MsgBox "No paga impuesto"
-Else
-    If ing_anual >= 1001 And ing_anual < 10000 Then
-        aum_imp = ing_anual * 0.05
-        MsgBox "Impuesto a pagar: " & aum_imp
+    If ing_anual >= 0 And ing_anual < 1000 Then
+        MsgBox "No paga impuesto"
     Else
-        If ing_anual >= 10001 And ing_anual < 100000 Then
-            aum_imp = ing_anual * 0.1
+        If ing_anual >= 1001 And ing_anual < 10000 Then
+            aum_imp = ing_anual * 0.05
             MsgBox "Impuesto a pagar: " & aum_imp
         Else
-            If ing_anual >= 100001 And ing_anual < 1000000 Then
-                aum_imp = ing_anual * 0.15
+            If ing_anual >= 10001 And ing_anual < 100000 Then
+                aum_imp = ing_anual * 0.1
                 MsgBox "Impuesto a pagar: " & aum_imp
             Else
-                If ing_anual >= 1000001 And ing_anual < 10000000 Then
-                    aum_imp = ing_anual * 0.2
+                If ing_anual >= 100001 And ing_anual < 1000000 Then
+                    aum_imp = ing_anual * 0.15
                     MsgBox "Impuesto a pagar: " & aum_imp
                 Else
-                    If ing_anual > 10000001 Then
-                        aum_imp = ing_anual * 0.25
+                    If ing_anual >= 1000001 And ing_anual < 10000000 Then
+                        aum_imp = ing_anual * 0.2
                         MsgBox "Impuesto a pagar: " & aum_imp
                     Else
-                        MsgBox "No se puede"    
+                        If ing_anual > 10000001 Then
+                            aum_imp = ing_anual * 0.25
+                            MsgBox "Impuesto a pagar: " & aum_imp
+                        Else
+                            MsgBox "No se puede"    
+                        End If
+                         
                     End If
-                     
+                        
                 End If
-                    
+            
             End If
-        
+
         End If
 
     End If
 
-End If
-
-End Sub
+    End Sub
 ´´´´
 
 ### 29 DE AGOSTO
@@ -116,7 +113,6 @@ End Sub
 En esta clase nos enseñaron a como mover datos en excel de una hoja a otra hoja y de una celda a otra celda, para esto el instructor nos colocó un ejercicio de hacer un registro de carros donde en la primera hoja tenias que registrar tu carro y luego de registrarlo los datos se pasaban a la otra hoja de datos de excel gracias al programa que ejecutamos 
 
 ### EJEMPLO DEL PROGRAMA
-
 ´´´´
     Sub save()
         fila = datos.Cells(1, 8)
@@ -128,8 +124,8 @@ En esta clase nos enseñaron a como mover datos en excel de una hoja a otra hoja
         datos.Cells(1, 8) = fila + 1
         
     End Sub
+    ´´´´
 
-´´´´
 
 Este codigo es el de pasar los datos ingresados en la primera hoja para la segunda hoja donde se tenias que guardar 
 
