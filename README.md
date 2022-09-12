@@ -139,8 +139,8 @@ Sub registrar()
 cont = 3
     
     For w = 1 To 10
-        name = InputBox("Ingrese su nombre:")
-        datos.Cells(conta, 2) = name
+        nam = InputBox("Ingrese su nombre:")
+        datos.Cells(conta, 2) = nam
         conta = conta + 1
     Next w
     
