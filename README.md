@@ -218,3 +218,296 @@ En esta clse nos enseñaron como seleccionar caracteres de alguna frase por medi
 
 
 ´´´´
+### EJERCICIO DE BANCO EN HTML CON CSS
+
+###INDEX
+´´´´ 
+  <!DOCTYPE html>
+  <html lang="es-CO">
+  <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="stilo.css">
+      <title>bancoop</title>
+  </head>
+  <body>
+      <main>
+          <header><img src="bancoop.png.jpg" alt="Cargando imagen"></header>
+          <nav>
+              <ul>
+                  <li>.Créditos.</li>
+                  <li>.Leasing.</li>
+                  <li>.Ahorros.</li>
+                  <li>.Servicio al cliente.</li>
+              </ul>
+          </nav>
+          <aside>
+              <article class="formulario">
+                  <h4>Ingresa tu a cuenta</h4>
+              </article>
+              <article class="optiones">
+                  <h3>TRANSACCIONES</h3>
+                  <p>
+                      <ul>
+                          <li>Banca personal</li>
+                          <li>Banca empresarial</li>
+                          <li>Banca seguros</li>
+                          <li>Pago de facturas</li>
+                      </ul>
+                      <h3>TARJETAS DE CRÉDITO</h3>
+                      <ul>
+                          <li>Credi visa</li>
+                          <li>Credi mastercard</li>
+                      </ul>
+                  </p>
+              </article>
+          </aside>
+          <section>
+              <article class= "arriba-derecha">
+                  <header>
+                      <h4>Ahorro estudiantil</h4>
+                      <img src="ahorro.png.jpeg" alt="cargando imagen">
+                      <p>Lorem ipsum dolor sit amet consectetur, sdfghwydbha tghjygvbhu adicomi baby doll ghjsxhuwnxu yuhj yvuerd tygu</p>
+                  </header>
+              </article>
+              <article class= "arriba-izquierda">
+                  <header>
+                      <h4>Solicita nuestro servicio</h4>
+                      <img src="tarban.png.jpeg" alt="Cargando imagen">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ducimus consequuntur necessitatibus nihil sit accusantium voluptatem dolores quibusdam labore facilis.</p>
+                  </header>
+              </article>
+              <article class= "abajo-derecha">
+                  <header>
+                      <h4>Crédito hipotrcario</h4>
+                      <img src="hipoteca.png.jpeg" alt="Cargando imagen">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ducimus consequuntur necessitatibus nihil sit accusantium voluptatem dolores quibusdam labore facilis.</p>
+                  </header>
+              </article>
+              <article class= "abajo-izquierda">
+                  <header>
+                      <h4>Crédito vehículos</h4>
+                      <img src="veiculo.png.jpeg" alt="Cargando imagen">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ducimus consequuntur necessitatibus nihil sit accusantium voluptatem dolores quibusdam labore facilis.</p>
+                  </header>
+              </article>
+          </section>
+          <footer>
+              <p>
+                  Contáctenos
+                  <br>
+                  Línea gratuita 01 80000-00001
+                  <br>
+                  Banco entídad financiera - todos los derechos reservasdos.
+              </p>
+          </footer>
+      </main>
+  </body>
+  </html>
+  
+´´´´ 
+### CSS
+
+´´´´ 
+     article{
+       background-color:rgb(201, 201, 201);
+       float: right;
+       height: 200px;
+       width: 175px;
+   }
+
+   article img{
+       height: 75px;
+       margin-left: 42px;
+       margin-top: 20px;
+       width: 110px;
+   }
+
+   article header h4{
+       text-align: center;
+
+   }
+
+   aside{
+       float: left;
+       width: 230px;
+   }
+
+
+   footer{
+       background-color: black;
+       border-radius: 0 0 20px 20px;
+       display: inline-block;
+       height: 69px;
+       margin: auto;
+       margin-top: 10px;
+       width: 100%;
+   }
+
+   footer p{
+       color: white;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 12px;
+       margin-top: 15px;
+       text-align: center;
+   }
+
+   header{
+       height: 115px;
+       width: 648px;
+   }
+
+   h3{
+       background-color: black;
+       color: rgb(245, 154, 35);
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 11px;
+       margin: 0;
+       padding-bottom: 5px ;
+       padding-top: 5px;
+       text-align: center;
+   }
+
+   h4{
+       color: white;
+       font-family: Arial, Helvetica, sans-serif;
+       margin:0px;
+       padding-top: 13px;
+   }
+
+   img{
+       height: 115px;
+       width: 649px;
+
+   }
+   main{
+       height: 675px;
+       margin: auto;
+       width: 650px;
+   }
+
+   nav{
+       background-color: rgb(255, 196, 0);
+       border-radius: 0px 0px 10px 10px;
+       height: 36px;
+       margin-bottom: 10px;
+       padding-bottom: 13px;
+       padding-top: 5px;
+       width: 649px;
+   }
+
+   nav ul li{
+       display: inline-block;
+       border-right: 2px solid white;
+       color: black;
+       font-family: Arial, Helvetica, sans-serif;
+       margin-left: 55px;
+   }
+
+   p{
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 10px;
+       text-align: center;
+   }
+
+   section{
+       float: right;
+       height:412px;
+       width: 402px;
+   }
+
+   section article{
+       float: right;
+       height: 200x;
+       width: 193px;
+   }
+
+   .abajo-derecha{
+       border-radius: 0 0 15px 0 ;
+       margin-top: 8px;
+
+   }
+
+   .abajo-derecha header{
+       background-color: black;
+       border-radius: 0 0 0 0;
+       height: 40px;
+       width: 192px;
+   }
+
+   .abajo-izquierda{
+       border-radius: 0 0 0 15px ;
+       margin-right: 10px;
+       margin-top: 8px;
+   }    
+
+   .abajo-izquierda header{
+       background-color: black;
+       border-radius: 0 0 0 0;
+       height: 40px;
+       width: 192px;
+   }
+
+   .arriba-derecha{
+       border-radius: 0 15px 0 0;
+   }
+
+   .arriba-derecha header{
+       background-color: black;
+       border-radius: 0 15px 0 0;
+       height: 40px;
+       width: 192px;
+   }
+
+   .arriba-izquierda{
+       border-radius: 15px 0 0 0;
+       margin-right: 10px;
+   }
+
+   .arriba-izquierda header{
+       background-color: black;
+       border-radius: 15px 0 0 0;
+       height: 40px;
+       width: 192px;
+   }
+
+   .formulario{
+       border-radius: 15px 15px 0 0 ;
+       margin-bottom: 10px;
+       width: 230px;
+   }
+
+   .formulario h4{
+       background-color: black;border-radius: 15px 15px 0 0 ;
+       color: white;
+       padding-bottom: 7px;
+       text-align: center;
+       width: 230px;
+
+   }
+
+   .optiones{
+       background-color: rgb(31, 31, 31);
+       width: 230px;
+   }
+
+   .optiones ul li{
+       align-items: center;
+       background-color:  solid #6c6c6c;
+       border-bottom: 1px solid white;
+       color: white;
+       display:flex;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 13px;
+       justify-content: center;
+       margin: 0;
+       text-decoration: none;
+       margin: 0;    
+   }
+
+   .optiones ul{
+       padding: 0px;
+       text-align: center;
+   }
+  
+´´´´ 
+
